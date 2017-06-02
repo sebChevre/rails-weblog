@@ -1,4 +1,4 @@
-class CommentsController < ApplicationController
+class Admin::CommentsController < AdminController
   before_action :set_post
 
   # POST /posts/:post_id/comments
