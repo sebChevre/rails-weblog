@@ -1,0 +1,9 @@
+<h1>Welcome to Weblog</h1>
+
+<% @posts.each do |post| %>
+  <article>
+    <h2><%= link_to post.title, post %></h2>
+    <p><%= post.body %></p>
+    <span>Comments: <%= post.comments.count %></span>
+  </article>
+<% end %>

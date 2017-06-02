@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root to: redirect('/posts')
+  root 'home#show'
 
-  resources :users
+  resources :users, only: %i[new create]
   resource :session, only: %i[new create destroy]
 
   resources :posts do
