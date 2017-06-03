@@ -2,8 +2,12 @@
 
 one:
   post: one
-  body: MyText
+  body: First comment on first post
 
 two:
+  post: one
+  body: Second comment on first post
+
+three:
   post: two
-  body: MyText
+  body: First comment on second post
