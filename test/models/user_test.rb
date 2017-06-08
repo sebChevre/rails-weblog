@@ -16,6 +16,13 @@ class UserTest < ActiveSupport::TestCase
       assert_equal("Bob", user.display_name, msg = "nop")
   end
   
+  test "ensure that password lngeth is min 8" do
+    user = User.new(admin:true, name:"Toto", password:"1234567")
+    
+    assert_not user.valid?
+  
+  end
+  
 
  
 end

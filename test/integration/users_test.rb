@@ -12,7 +12,7 @@ class UsersTest < ActionDispatch::IntegrationTest
         user: {
           name: 'John Doe',
           email: 'john@doe.com',
-          password: 'secret'
+          password: 'secret123456'
         }
       }
 
